@@ -4,80 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/tv_monets"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"/>
 
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:orientation="horizontal">
 
-    <Button
+    <ImageButton
         android:id="@+id/monet_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/colorAccent"
+        android:onClick="onClick"
+        />
 
-    <Button
+    <ImageButton
         android:id="@+id/monet_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/colorAccent"
+        android:onClick="onClick"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/monet_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@color/colorAccent"
+        android:onClick="onClick"/>
 
 </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/monet_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorAccent"
+            android:onClick="onClick"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/monet_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorAccent"
+            android:onClick="onClick"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/monet_6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorAccent"
+            android:onClick="onClick"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/monet_7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorAccent"
+            android:onClick="onClick"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/monet_8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorAccent"
+            android:onClick="onClick"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/monet_9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/colorAccent"
+            android:onClick="onClick"/>
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/count"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="count"/>
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:text="@string/tv_count"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="50sp"/>
 
 </LinearLayout>

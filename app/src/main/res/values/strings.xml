@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Monets</string>
+    <string name="tv_monets">Monets</string>
+    <string name="tv_count">Count</string>
 </resources>

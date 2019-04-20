@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         initResources();
-        initButton();
+        initAllButton();
         setButtonImages();
 
     }
@@ -59,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         random = new Random();
         bronze_coin = new Coin(0, R.drawable.bronze_coin_24dp, 1);
         silver_coin = new Coin(1, R.drawable.silver_coin_24dp, 2);
-        gold_coin = new Coin(2, R.drawable.gold_coin_24dp, 3);
+        gold_coin = new Coin(2, R.drawable.gold_coin_24dp, -3);
     }
 
     private Coin getRandomCoin(){
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return randomCoin;
     }
 
-    private void initButton(){
+    private void initAllButton(){
         position = new ImageButton[3][3];
         position[0][0] = btn_monet_1;
         position[0][1] = btn_monet_2;
@@ -85,7 +84,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         position[2][2] = btn_monet_9;
     }
     private ImageButton[][] setButtonImages(){
-
         for (int i = 0; i < 3; i++)
             for (int j = 0; j < 3; j++){
                 Coin randomCoin = getRandomCoin();
@@ -102,16 +100,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             count.setText(result.toString());
             Toast.makeText(this, "You have " + result.toString(), Toast.LENGTH_SHORT).show();
         }else{
-            ImageButton[][] position = new ImageButton[3][3];
-            position[0][0] = btn_monet_1;
-            position[0][1] = btn_monet_2;
-            position[0][2] = btn_monet_3;
-            position[1][0] = btn_monet_4;
-            position[1][1] = btn_monet_5;
-            position[1][2] = btn_monet_6;
-            position[2][0] = btn_monet_7;
-            position[2][1] = btn_monet_8;
-            position[2][2] = btn_monet_9;
             for (int i = 0; i < 3; i++)
                 for (int j = 0; j < 3; j++){
                     position[i][j].setClickable(false);
