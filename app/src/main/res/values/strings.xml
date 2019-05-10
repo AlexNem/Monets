@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Monets</string>
     <string name="tv_monets">Monets</string>
-    <string name="tv_count">Count</string>
+    <string name="tv_count">Start</string>
+    <string name="title_win">15,You WIN!</string>
+    <string name="title_lost">You Lost!</string>
+    <string name="btn_start_text">Count</string>
 </resources>

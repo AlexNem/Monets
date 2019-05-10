@@ -104,14 +104,14 @@
 
     </LinearLayout>
 
-    <TextView
+    <Button
         android:id="@+id/count"
         android:layout_width="wrap_content"
         android:layout_height="75dp"
         android:layout_gravity="center"
         android:text="@string/tv_count"
+        android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"
-        android:textStyle="bold"
         android:textSize="50sp"/>
 
 </LinearLayout>
